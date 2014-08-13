@@ -46,6 +46,7 @@ MultiTouchDraw.randomPastel = function () {
 	var r = Math.floor(Math.random() * 4 + 1) * 64,
 		g = Math.floor(Math.random() * 4 + 1) * 64,
 		b = Math.floor(Math.random() * 4 + 1) * 64;
+	if (r == 64 && g == 64 && b == 64) { b = 256; }
 	return "rgb(" + r + ", " + g + ", " + b + ")";
 };
 
